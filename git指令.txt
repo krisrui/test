@@ -1,4 +1,5 @@
 git add .
+git status 查看当前仓库文件的状态
 git commit -m ""
 git log 查看版本记录 也就是看有多少后悔药 按Q退出
 git checkout  xxxxxxx  身份证前7位  穿越到指定历史节点 
@@ -10,3 +11,4 @@ git tag -a 标签名 -m '备注'  完成度比较高的时候
 git tag 打出所有的tag
 git tag -a 标签名 -m '备注' + 身份证 可以给以前的药打标签
 git show 标签名 查看某个标签的详细信息
+在仓库中添加新文件  直接git add . 根据diff算法

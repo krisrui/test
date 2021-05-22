@@ -1,14 +1,44 @@
 git add .
 git status 查看当前仓库文件的状态
 git commit -m ""
-git log 查看版本记录 也就是看有多少后悔药 按Q退出
-git checkout  xxxxxxx  身份证前7位  穿越到指定历史节点 
-git checkout  - 回到之前的版本
+git log 查看版本记录
+git checkout -- 文件  用暂存区的文件覆盖工作目录中的文件
+git rm -- cached 文件 将文件从暂存区中删除  工作区还在
+git reflog
+
+$ git reset --hard HEAD^ 回到上一个版本
+$ git reset --hard HEAD~x 回到上x版本
+git config-l 查看所有配置信息
+$ git reset --hard 版本名  回滚历史操作
+
+git branch 查看所有分支
+git branch 分支名 创建分支
+git branch -d 分支名 删除分支
+git checkout 切换分支 
+git checkout -b 文件  创建并切换到分支    ps：创建分支的时候 master必须有内容 
+git merge 分支名 合并分支
+
+
+
+
 
 git log -p 查看具体修改了啥
 git log --oneline
-git tag -a 标签名 -m '备注'  完成度比较高的时候
+git tag -a 标签名 -m '备注'  完成度比较高的时候打个标签
 git tag 打出所有的tag
 git tag -a 标签名 -m '备注' + 身份证 可以给以前的药打标签
 git show 标签名 查看某个标签的详细信息
 在仓库中添加新文件  直接git add . 根据diff算法
+
+
+
+
+$git remote -v 查看所有
+$ git remote add origin 地址
+$ git remote rm origin 删除
+第一次下载 git clone 远程地址 项目名（默认github仓库名）
+ 
+
+提交之前最好先拉取
+$git pull origin master
+把本地代码提交到远程仓库（需要github用户名）
